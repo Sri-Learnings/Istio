@@ -46,7 +46,7 @@ spec:
 ```
   $ kubectl config set-context $(kubectl config current-context) --namespace=dev
 
-   kubectl create ns istio-test
+  $ kubectl create ns istio-test
 ```
 
 # Istio
