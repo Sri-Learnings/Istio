@@ -222,6 +222,10 @@ for i in $(seq 1 100); do curl -s -o /dev/null "http://$GATEWAY_URL/productpage"
 
 
 # Uninstall
+
+istioctl x uninstall --purge
+
+
 ```
 kubectl delete -f samples/addons
 
