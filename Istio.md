@@ -44,7 +44,7 @@ spec:
 ```
 - By default, we will be in a **`default`** namespace. To switch to a particular namespace permenently run the below command.
 ```
-  $ kubectl config set-context $(kubectl config current-context) --namespace=dev
+  $ kubectl config set-context $(kubectl config current-context) --namespace=istio-test
 
   $ kubectl create ns istio-test
 ```
