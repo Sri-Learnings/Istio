@@ -47,6 +47,8 @@ spec:
   $ kubectl config set-context $(kubectl config current-context) --namespace=istio-test
 
   $ kubectl create ns istio-test
+
+  $ kubectl config get-contexts (**` to know current namespace and cluster)
 ```
 
 # Istio
