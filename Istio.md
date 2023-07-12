@@ -125,8 +125,8 @@ https://istio.io/latest/docs/setup/getting-started/
 
 1. Go to the Istio release page to download the installation file for your OS, or download and extract the latest release automatically (Linux or macOS):
     ```
-   $ curl -L https://istio.io/downloadIstio | sh -
-   ```
+    curl -L https://istio.io/downloadIstio | sh -
+    ```
     *****  The command above downloads the latest release (numerically) of Istio. You can pass variables on the command line to download a specific version or to 
     override the processor architecture. For example, to download Istio 1.18.0 for the x86_64 architecture, run:
     ```
@@ -143,7 +143,7 @@ https://istio.io/latest/docs/setup/getting-started/
 3. Add the istioctl client to your path (Linux or macOS):
 
   ```
-   export PATH=$PWD/bin:$PATH
+  export PATH=$PWD/bin:$PATH
   ```
 
 #  Install Istio
@@ -152,24 +152,24 @@ https://istio.io/latest/docs/setup/getting-started/
 
  ***** If your platform has a vendor-specific configuration profile, e.g., Openshift, use it in the following command, instead of the demo profile. Refer to your platform instructions for details. ****
 ```
- istioctl install --set profile=demo -y
+istioctl install --set profile=demo -y
 ```
 2. Add a namespace label to instruct Istio to automatically inject Envoy sidecar proxies when you deploy your application later:
 ```
-   kubectl label namespace default istio-injection=enabled
+kubectl label namespace default istio-injection=enabled
 ```
 # Deploy the sample application
 
 1. Deploy the Bookinfo sample application:
 ```
-  kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
+kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
 ```
 2. The application will start. As each pod becomes ready, the Istio sidecar will be deployed along with it.
 ```
-   kubectl get services
+kubectl get services
 ```
  ```
-  kubectl get pods
+kubectl get pods
 ```
   Above application running inside the cluster 
 
@@ -180,11 +180,11 @@ https://istio.io/latest/docs/setup/getting-started/
 
 1. Associate this application with the Istio gateway:
 ```
-   kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
+kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
 ```
 2. Ensure that there are no issues with the configuration:
 ```
-   istioctl analyze
+istioctl analyze
 ```
 # Determining the ingress IP and ports  
 
@@ -199,13 +199,13 @@ https://istio.io/latest/docs/setup/getting-started/
       
 1. Install Kiali and the other addons and wait for them to be deployed.
 ```
-   kubectl apply -f samples/addons
+kubectl apply -f samples/addons
  ```  
-   kubectl rollout status deployment/kiali -n istio-system
+kubectl rollout status deployment/kiali -n istio-system
 
 2. Access the Kiali dashboard.
 ```
-   istioctl dashboard kiali
+istioctl dashboard kiali
 ```
 
 
@@ -215,7 +215,7 @@ https://istio.io/latest/docs/setup/getting-started/
       Telemetry API. With the default sampling rate of 1%, you need to send at least 100 requests before the first trace is visible. To send a 100 requests to the 
     productpage service, use the following command:
 ```
-    for i in $(seq 1 100); do curl -s -o /dev/null "http://$GATEWAY_URL/productpage"; done
+for i in $(seq 1 100); do curl -s -o /dev/null "http://$GATEWAY_URL/productpage"; done
 ```
 
 ![image](https://github.com/Sri-Terraform/Kubernetes-IMP-Points/assets/130881628/a4e374d5-fb92-46cf-87b1-f00a893967ba)
