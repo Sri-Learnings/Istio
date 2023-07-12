@@ -42,6 +42,9 @@ spec:
         port:
           number: 20001
 ```
+- By default, we will be in a **`default`** namespace. To switch to a particular namespace permenently run the below command.
+  ```
+  $ kubectl config set-context $(kubectl config current-context) --namespace=dev
 
 # Istio
 
