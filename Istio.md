@@ -191,12 +191,12 @@ istioctl analyze
 # Verify external access
 
 # View the dashboard
-
-    **** Istio integrates with several different telemetry applications. These can help you gain an understanding of the structure of your service mesh, display 
+```
+    * Istio integrates with several different telemetry applications. These can help you gain an understanding of the structure of your service mesh, display 
          the topology of the mesh, and analyze the health of your mesh.
 
       Use the following instructions to deploy the Kiali dashboard, along with Prometheus, Grafana, and Jaeger.
-      
+```      
 1. Install Kiali and the other addons and wait for them to be deployed.
 ```
 kubectl apply -f samples/addons
