@@ -58,8 +58,9 @@ When infrastructures shifted from monolithic to microservices, containers could 
 
  Istio is an open source service mesh that layers transparently onto existing distributed applications. Istio’s powerful features provide a uniform and more efficient way to secure, connect, and monitor services. Istio is the path to load balancing, service-to-service authentication, and monitoring–with few or no service code changes. Its powerful control plane brings vital features, including features like Dynamic service discovery, Load balancing, TLS termination, HTTP/2 and proxies, Circuit breakers, Health checks, Staged rollouts with%-based traffic split, Fault injection and Rich metrics.
 
+![1](https://github.com/Sri-Learnings/Istio/assets/130881628/184e37c4-1b0c-4d53-85f5-ba26c184aa20)
 
-![image](https://github.com/Sri-Terraform/Kubernetes-IMP-Points/assets/130881628/821bd070-ad89-46fb-b9a4-55ea43e8533d)
+
 
 
 Istio architecture, the sidecar proxy is called the envoy proxy, which is an independent open source project. Control Plane centrally manages these proxy services using a single daemon istiod. With Istio, operators can inject configurations into the pods as on when necessary.
