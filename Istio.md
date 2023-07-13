@@ -115,7 +115,8 @@ These components are not needed if we are using a version 1.5 or above. These co
 
 ** **`Enforce policies :`** Enforce policies with a pluggable policy layer and configuration API that supports access controls, rate limits, and quotas.
 
-![image](https://github.com/Sri-Terraform/Kubernetes-IMP-Points/assets/130881628/19467c13-c35a-4cad-87d4-a9aa68616db5)
+
+![2](https://github.com/Sri-Learnings/Istio/assets/130881628/e3ef84de-94a0-4dea-9fbc-0b1d4f2dba13)
 
 
 
@@ -138,7 +139,6 @@ https://istio.io/latest/docs/setup/getting-started/
 
   cd istio-1.18.0
 
-  ![image](https://github.com/Sri-Terraform/Kubernetes-IMP-Points/assets/130881628/3c7a4a08-8769-442d-b5dd-94ce7809b8ab)
 
 
 3. Add the istioctl client to your path (Linux or macOS):
@@ -219,7 +219,8 @@ istioctl dashboard kiali
 for i in $(seq 1 100); do curl -s -o /dev/null "http://$GATEWAY_URL/productpage"; done
 ```
 
-![image](https://github.com/Sri-Terraform/Kubernetes-IMP-Points/assets/130881628/a4e374d5-fb92-46cf-87b1-f00a893967ba)
+
+![3](https://github.com/Sri-Learnings/Istio/assets/130881628/70b0a5f7-8c37-4bf3-a4bb-97c752376db1)
 
 
 # Uninstall
@@ -233,8 +234,8 @@ kubectl delete -f samples/addons
 istioctl uninstall -y --purge
 
 kubectl delete namespace istio-system
-```
+
 kubectl label namespace default istio-injection-
-![image](https://github.com/Sri-Terraform/Kubernetes-IMP-Points/assets/130881628/95703e55-a3d5-40fe-9508-ca26301f6d8b)
+```
 
 
